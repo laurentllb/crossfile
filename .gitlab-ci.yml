@@ -8,6 +8,7 @@
 stages:
 - test
 sast:
+  image: maven:3.8-openjdk-11
   stage: test
   before_script: mvn package
 include:
