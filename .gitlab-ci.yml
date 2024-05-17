@@ -9,6 +9,6 @@ stages:
 - test
 sast:
   stage: test
-  script: mvn package
+  before_script: mvn package
 include:
 - template: Security/SAST.gitlab-ci.yml
